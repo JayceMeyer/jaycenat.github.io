@@ -1,7 +1,7 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <div class="card-container">
-    <a class="circle-link" title="Home" (click)="loadPage('about')">
+  <div class="circle-card-container">
+    <a class="circle-card" title="Home" (click)="loadPage('about')">
       <p>J</p>
     </a>
     <span class="toolbar-title">
@@ -11,13 +11,20 @@
 </div>
 
 <!-- Content -->
-<div class="content" role="main">
-  
+<div class="content-container" role="main">
+  <div class="side-nav-container" role="navigation">
+    <a [ngClass]="{'side-nav-item': !displayAboutPage, 'selected-side-nav-item': displayAboutPage}" (click)="loadPage('about')">About</a>
+    <a [class]="displayPortfolioPage ? 'selected-side-nav-item' : 'side-nav-item'" (click)="loadPage('portfolio')">Portfolio</a>
+    <a [class]="displayContactPage ? 'selected-side-nav-item' : 'side-nav-item'" (click)="loadPage('contact')">Contact</a>
+  </div>
+
   <!-- Page Components -->
-  <about-page *ngIf='displayAboutPage'></about-page>
-  <portfolio-page *ngIf='displayPortfolioPage'></portfolio-page>
-  <contact-page *ngIf='displayContactPage'></contact-page>
-  <resume-page *ngIf='displayResumePage'></resume-page>
+  <div class="content-detail">
+    <about-page *ngIf='displayAboutPage'></about-page>
+    <portfolio-page *ngIf='displayPortfolioPage'></portfolio-page>
+    <contact-page *ngIf='displayContactPage'></contact-page>
+    <resume-page *ngIf='displayResumePage'></resume-page>
+  </div>
 
 </div>
 <!-- Footer -->

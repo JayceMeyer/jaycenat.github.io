@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
 
@@ -47,7 +47,6 @@ svg.material-icons:not(:last-child) {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 2px calc((100% - 900px) * 0.5);
 }
 
 .card {

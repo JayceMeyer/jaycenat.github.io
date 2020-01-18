@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'jaycemeyer-website';
   date = new Date().getFullYear();
-  displayAboutPage: boolean = false;
+  displayAboutPage: boolean = true;
   displayPortfolioPage: boolean = false;
   displayContactPage: boolean = false;
-  displayResumePage: boolean = true;
+  displayResumePage: boolean = false;
 
   loadPage(pageName: string) {
     switch(pageName) {
