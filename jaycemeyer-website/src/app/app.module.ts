@@ -7,6 +7,7 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { NgxExtendedPdfViewerComponent } from '../../node_modules/ngx-extended-pdf-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgxExtendedPdfViewerComponent } from '../../node_modules/ngx-extended-p
     NgxExtendedPdfViewerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

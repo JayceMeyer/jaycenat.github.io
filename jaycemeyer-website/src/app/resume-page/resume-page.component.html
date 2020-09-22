@@ -1,6 +1,10 @@
-<div>
-    <ngx-extended-pdf-viewer 
-        [src]="'assets/example.pdf'" 
+<div id="resume-page" class="resume"
+  style="transform: translateY(-100%)"
+  [@slideDown]="openClose ? 'open' : 'close'">
+    <!-- <ngx-extended-pdf-viewer 
+        [src]="'../assets/Jayce_Meyer_Resume_Oct_2019.pdf'" 
         useBrowserLocale="true" 
-        height="80vh"></ngx-extended-pdf-viewer>    
+        height="80vh"></ngx-extended-pdf-viewer> -->
+
+        <img style="height: 1100px; width: 800px; object-fit: cover;" src="../../assets/Jayce_Meyer_Resume_Oct_2019.jpg" alt="pic.jpg">
 </div>

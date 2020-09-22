@@ -15,6 +15,7 @@ export class AppComponent {
   displayResumePage: boolean = false;
 
   loadPage(pageName: string) {
+    document.getElementById("content-detail").style.zIndex = '-1'
     switch(pageName) {
       case "about": {
         this.displayAboutPage = true;

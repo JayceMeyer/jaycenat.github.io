@@ -24,8 +24,13 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "dist/ngx-extended-pdf-viewer/assets/",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets/",
                 "output": "/assets/"
+              },
+              { 
+                "glob": "**/pdf.worker.js", 
+                "input": "node_modules/ngx-extended-pdf-viewer/assets", 
+                "output": "/assets/" 
               }
             ],
             "styles": [

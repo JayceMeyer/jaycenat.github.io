@@ -1,0 +1,104 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+#comp-jpbpwi29 {
+    --bgh: 209,79,40;
+    --txth: var(--color_11);
+    --bg: var(--color_15);
+    --fnt: normal normal normal 14px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    --txt: var(--color_11);
+    --bgd: 204,204,204;
+    --alpha-bgd: 1;
+    --txtd: 255,255,255;
+    --alpha-txtd: 1;
+    --alpha-bg: 1;
+    --alpha-bgh: 1;
+    --alpha-txt: 1;
+    --alpha-txth: 1;
+    width: 323px;
+    height: 48px;
+    --shc-mutated-brightness: 0,0,0;
+    --label-align: center;
+    --label-text-align: center;
+}
+
+._2xsVZ ._1nW4j {
+    border-bottom: 50px solid var(--corvid-background-color,rgba(var(--bg,var(--color_17)),var(--alpha-bg,1)));
+    bottom: 50%!important;
+}
+
+._2xsVZ ._1ltjE {
+    border-top: 50px solid var(--corvid-background-color,rgba(var(--bg,var(--color_17)),var(--alpha-bg,1)));
+    top: 50%!important;
+}
+
+._2xsVZ ._2Mnsh, ._2xsVZ ._261kf {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+._2xsVZ ._261kf {
+    right: 0;
+}
+
+._261kf:after, ._261kf:before {
+    content: "";
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+._2xsVZ ._1hc1C {
+    font: var(--fnt,var(--font_5));
+    color: var(--corvid-color,rgba(var(--txt,var(--color_15)),var(--alpha-txt,1)));
+    position: relative;
+    white-space: nowrap;
+}
+
+._261kf:after {
+    max-width: var(--margin-right,0);
+}
+
+._2xsVZ ._1ltjE, ._2xsVZ ._1nW4j {
+    border-left: 0;
+    border-right: 50px solid transparent;
+    position: absolute;
+    right: 0;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}

@@ -1,16 +1,52 @@
-<div class="about">
-    <img style="height: 70px; width: 70px;" src="../../assets/images/head-shot.jpg" alt="pic">
+<div id="about-page" class="about"
+  style="transform: translateY(-100%)"
+  [@slideDown]="openClose ? 'open' : 'close'">
     <!-- Resources -->
-    <h2>Resources</h2>
-    <p>Here are some links to help you get started:</p>
-
-    <div class="card-container">
-      <a class="card" target="_blank" rel="noopener" href="https://blog.angular.io/">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
-
-        <span>Angular Blog</span>
-
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-      </a>
-    </div> 
+    <div class="float-container">
+      <div class="float-child">
+        <img style="height: 150px; width: 150px; object-fit: cover;" src="../../assets/images/head-shot.jpg" alt="pic.jpg">
+      </div>
+      
+      <div class="float-child">
+        <div class="card-container">
+          <button type="button" (click)="loadResumePage()">Resume</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="float-container">
+      
+      <div class="float-child">
+        <div id="about-text" data-testid="richTextElement"><h2 class="font_2" style="line-height:2em;font-size:16px"><span>About</span></h2>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>Based in Denver, CO</span></p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px">&nbsp;</p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I'm a driven Software Engineer with a passion for creating well-designed, user friendly software that customers love using. I'm very personable and a hard working team player; I work best when I know my co-workers are in sync.&nbsp;</span></p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span class="whitespace">​</span></p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I'm experienced on both Mac and PC systems, and I code in C#, C++, Python, and Angular. Currently, I'm learning React.js&nbsp;and Flutter/Dart to allow me to make even better designed and more performant UI.&nbsp;</span></p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span class="whitespace">​</span></p>
+          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I love motorcycle riding, traveling, and eating delicious food in my free time.</span></p>
+        </div>
+      </div>
+    
+      <div class="float-child">  
+        <div id="cv-text" data-testid="richTextElement"><h2 class="font_2" style="font-size:16px">CV</h2>
+          <p class="font_7" style="line-height:2em;font-size:16px"><span style="text-decoration:underline;">Experience</span></p>
+          <p class="font_7" style="line-height:1em;font-size:16px"><span>2018 - Present&nbsp;:&nbsp;<span style="font-style:italic;">Vertafore, Inc.</span></span></p>
+          <p class="font_7" style="font-size:16px"><span>Software Engineer</span></p>
+          <p class="font_7" style="font-size:16px"><span><span class="whitespace">​</span></span></p>
+          <p class="font_7" style="font-size:16px">2016&nbsp;- Present :&nbsp;<span style="font-style:italic;">The Buff Restaurant</span></p>
+          <p class="font_7" style="font-size:16px">Payroll Specialist</p>
+          <p class="font_7" style="font-size:16px"><span><span class="whitespace">​</span></span></p>
+          <p class="font_7" style="font-size:16px">May '16 - July '16 :&nbsp;<span style="font-style: italic;">agent24, Inc.</span></p>
+          <p class="font_7" style="font-size:16px">Software &amp; Network Internship</p>
+          <p class="font_7" style="font-size:16px"><span class="whitespace">​</span></p>
+          <p class="font_7" style="font-size:16px">2010&nbsp;- 2018 :&nbsp;<span style="font-style:italic;">The Buff Restaurant</span></p>
+          <p class="font_7" style="font-size:16px">Manager &amp; Barista</p>
+          <h2 class="font_2" style="font-size:16px"><span class="whitespace">​</span></h2>
+          <p class="font_7" style="font-size:16px"><span style="text-decoration:underline;">Education</span></p>
+          <p class="font_8" style="font-size:14px">2012 - 2017 <span style="font-style:italic;">University of Colorado at Boulder</span></p>
+          <p class="font_8" style="font-size:14px">Bachelor of Arts in Computer Science - Dean's List</p>
+        </div>
+      </div>
+    </div>
 </div>

@@ -19,9 +19,9 @@
   </div>
 
   <!-- Page Components -->
-  <div class="content-detail">
-    <about-page *ngIf='displayAboutPage'></about-page>
-    <portfolio-page *ngIf='displayPortfolioPage'></portfolio-page>
+  <div class="content-detail" id="content-detail">
+    <about-page *ngIf='displayAboutPage' (showResumePage)='loadPage("resume")'></about-page>
+    <portfolio-page *ngIf='displayPortfolioPage' (showResumePage)='loadPage("resume")'></portfolio-page>
     <contact-page *ngIf='displayContactPage'></contact-page>
     <resume-page *ngIf='displayResumePage'></resume-page>
   </div>
