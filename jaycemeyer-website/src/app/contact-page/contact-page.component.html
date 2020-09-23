@@ -4,15 +4,78 @@
     
   <div class="float-container">
       <div class="float-child">
+        
         <div id="contact-text" data-testid="richTextElement"><h2 class="font_2" style="line-height:2em;font-size:16px;padding-top: 0px;"><span>Contact</span></h2>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>Based in Denver, CO</span></p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px">&nbsp;</p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I'm a driven Software Engineer with a passion for creating well-designed, user friendly software that customers love using. I'm very personable and a hard working team player; I work best when I know my co-workers are in sync.&nbsp;</span></p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span class="whitespace">​</span></p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I'm experienced on both Mac and PC systems, and I code in C#, C++, Python, and Angular. Currently, I'm learning React.js&nbsp;and Flutter/Dart to allow me to make even better designed and more performant UI.&nbsp;</span></p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span class="whitespace">​</span></p>
-          <p class="font_8" style="line-height:1.5em;font-size:14px"><span>I love motorcycle riding, traveling, and eating delicious food in my free time.</span></p>
+          <!-- linkedin -->
+          <a href="https://www.linkedin.com/in/jayce-meyer-6b5309141/" target="_blank" rel="noopener">
+            <img style="padding-right: 8px; height: 28px; width: 28px; object-fit: cover;" src="../../assets/images/linkedin.png" alt="linkedin">
+          </a>
+          <!-- facebook -->
+          <a href="https://www.facebook.com/jayce.meyer" target="_blank" rel="noopener">
+            <img style="padding-right: 10px; height: 18px; width: 18px; object-fit: cover;" src="../../assets/images/facebook.png" alt="facebook">
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/jaycenat/" target="_blank" rel="noopener">
+            <img style="height: 20px; width: 20px; object-fit: cover;" src="../../assets/images/instagram.png" alt="instagram">
+          </a>
         </div>
+
+        <p></p>
+
+        <form (ngSubmit)="processForm()">
+          <!-- name -->
+          <div class="field">
+            <input
+              type="text" 
+              name="name" 
+              class="input" 
+              placeholder="Name *" 
+              [(ngModel)]="name"
+              #nameInput="ngModel"
+              required>
+
+            <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+              Name is required!
+            </div>
+          </div>
+          <!-- email -->
+          <div class="field">
+            <input 
+              class="input" 
+              name="email" 
+              type="email" 
+              placeholder="Email *" 
+              email 
+              pattern="^.+@.+\.[a-zA-Z]{2,63}$" 
+              maxlength="250" 
+              [(ngModel)]="email" 
+              #emailInput="ngModel"
+              required>
+            
+            <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+              Email is required!
+            </div>
+          </div>
+          <!-- message -->
+          <div class="field">
+            <textarea 
+              class="textarea" 
+              name="message" 
+              placeholder="Message" 
+              [(ngModel)]="message" 
+              #messageInput="ngModel"
+              required>
+            </textarea>
+            
+            <div class="help is-error" *ngIf="messageInput.invalid && messageInput.dirty">
+              Message is required!
+            </div>
+          </div>
+        
+          <button type="submit" class="button is-danger is-large">Send</button>
+
+        </form>
+
       </div>
     </div>
     
