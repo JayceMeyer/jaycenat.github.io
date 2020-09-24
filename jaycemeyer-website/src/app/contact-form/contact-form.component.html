@@ -1,0 +1,60 @@
+<div [hidden]="submitted">
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm" action="https://formspree.io/meqpqwkq" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name"
+                 required
+                 [(ngModel)]="model.name" name="name"
+                 #name="ngModel">
+          <div [hidden]="name.valid || name.pristine"
+               class="alert alert-danger">
+            Name is required
+          </div>
+        </div>
+  
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email"
+                   required
+                   [(ngModel)]="model.email" name="email"
+                   #email="ngModel">
+            <div [hidden]="email.valid || email.pristine"
+                 class="alert alert-danger">
+              Email is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <input type="text" class="form-control" id="message"
+                   required
+                   [(ngModel)]="model.message" name="message"
+                   #message="ngModel">
+            <div [hidden]="message.valid || message.pristine"
+                 class="alert alert-danger">
+              Message is required
+            </div>
+        </div>
+  
+        <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Send</button>
+      </form>
+</div>
+  
+<div [hidden]="!submitted">
+      <span>Thank you! Your info will be sent to Jayce Meyer.</span>
+      <p></p>
+      <div class="row">
+        <div class="col-xs-3">Name:</div>
+        <div class="col-xs-9">{{ model.name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Email:</div>
+        <div class="col-xs-9">{{ model.email }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Message:</div>
+        <div class="col-xs-9">{{ model.message }}</div>
+      </div>
+      <br>
+      <button class="btn btn-primary" (click)="newContact()">Done</button>
+</div>

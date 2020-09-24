@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.btn-success, .btn-primary {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-success:hover, .btn-primary:hover {
+    background-color: rgb(210, 60, 15);
+    border-color: rgb(210, 60, 15);
+}
+
+.btn-success:disabled:hover, .btn-primary:disabled:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+  
+.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+}

@@ -22,59 +22,7 @@
 
         <p></p>
 
-        <form (ngSubmit)="processForm()">
-          <!-- name -->
-          <div class="field">
-            <input
-              type="text" 
-              name="name" 
-              class="input" 
-              placeholder="Name *" 
-              [(ngModel)]="name"
-              #nameInput="ngModel"
-              required>
-
-            <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
-              Name is required!
-            </div>
-          </div>
-          <!-- email -->
-          <div class="field">
-            <input 
-              class="input" 
-              name="email" 
-              type="email" 
-              placeholder="Email *" 
-              email 
-              pattern="^.+@.+\.[a-zA-Z]{2,63}$" 
-              maxlength="250" 
-              [(ngModel)]="email" 
-              #emailInput="ngModel"
-              required>
-            
-            <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
-              Email is required!
-            </div>
-          </div>
-          <!-- message -->
-          <div class="field">
-            <textarea 
-              class="textarea" 
-              name="message" 
-              placeholder="Message" 
-              [(ngModel)]="message" 
-              #messageInput="ngModel"
-              required>
-            </textarea>
-            
-            <div class="help is-error" *ngIf="messageInput.invalid && messageInput.dirty">
-              Message is required!
-            </div>
-          </div>
-        
-          <button type="submit" class="button is-danger is-large">Send</button>
-
-        </form>
+        <contact-form></contact-form>
 
       </div>
     </div>
