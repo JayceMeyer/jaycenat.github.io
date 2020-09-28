@@ -1,11 +1,15 @@
 <div [hidden]="submitted">
       <form (ngSubmit)="onSubmit()" #contactForm="ngForm" action="https://formspree.io/meqpqwkq" method="POST">
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name"
-                 required
-                 [(ngModel)]="model.name" name="name"
-                 #name="ngModel">
+          <!-- <label for="name">Name</label> -->
+          <input type="text"
+                class="form-control" 
+                id="name"
+                required
+                [(ngModel)]="model.name" 
+                name="name"
+                placeholder="Your Name"
+                #name="ngModel">
           <div [hidden]="name.valid || name.pristine"
                class="alert alert-danger">
             Name is required
@@ -13,10 +17,12 @@
         </div>
   
         <div class="form-group">
-            <label for="email">Email</label>
+            <!-- <label for="email">Email</label> -->
             <input type="text" class="form-control" id="email"
                    required
-                   [(ngModel)]="model.email" name="email"
+                   [(ngModel)]="model.email"
+                   name="email"
+                   placeholder="Your Email"
                    #email="ngModel">
             <div [hidden]="email.valid || email.pristine"
                  class="alert alert-danger">
@@ -25,11 +31,13 @@
         </div>
 
         <div class="form-group">
-            <label for="message">Message</label>
+            <!-- <label for="message">Message</label> -->
             <input type="text" class="form-control" id="message"
-                   required
-                   [(ngModel)]="model.message" name="message"
-                   #message="ngModel">
+                  required
+                  [(ngModel)]="model.message" 
+                  name="message"
+                  placeholder="Your Message"
+                  #message="ngModel">
             <div [hidden]="message.valid || message.pristine"
                  class="alert alert-danger">
               Message is required

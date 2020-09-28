@@ -1,5 +1,21 @@
 .container {
     width: 100%;
+    display: flex;
+    display: inline-flex;
+    width: fit-content;
+    flex-basis: auto;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    display: inline-flex;
+    width: fit-content;
+    flex-basis: auto;
+}
+
+.btn-success {
+    float: right;
 }
 
 .btn-success, .btn-primary {

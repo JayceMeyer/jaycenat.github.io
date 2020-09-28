@@ -1,5 +1,6 @@
 import { Component, QueryList, ViewChildren } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 import { Contact } from './contact';
 
@@ -14,11 +15,17 @@ export class ContactFormComponent {
   @ViewChildren(NgModel) fields: QueryList<NgModel>;
 
   model = new Contact('', '', '');
-
   submitted = false;
+
+  constructor(private http: HttpClient) { }
 
   onSubmit() { 
     this.submitted = true;
+    this.http.post('https://formspree.io/meqpqwkq', { 
+      name: this.model.name, 
+      _replyto: this.model.email, 
+      message: this.model.message })
+      .subscribe();
   }
 
   newContact() {
@@ -26,5 +33,5 @@ export class ContactFormComponent {
     this.fields.forEach(model => model.control.reset());
     this.submitted = false;
   }
-  
+
 }
