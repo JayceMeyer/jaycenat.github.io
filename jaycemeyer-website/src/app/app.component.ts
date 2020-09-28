@@ -16,6 +16,10 @@ export class AppComponent {
 
   loadPage(pageName: string) {
     document.getElementById("content-detail").style.zIndex = '-1'
+    setTimeout(() => {
+      document.getElementById("content-detail").style.zIndex = '1'
+    }, 
+    350)
     switch(pageName) {
       case "about": {
         this.displayAboutPage = true;
