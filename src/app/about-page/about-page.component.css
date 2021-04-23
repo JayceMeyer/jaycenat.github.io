@@ -8,13 +8,14 @@
     float: left;
     padding: 20px;
     padding-top: 0px;
+    min-width: 165px;
 }
 
 .button {
     float:left;
     height:40px;
     background:black;
-    width:250px;
+    width: 20vw;
     text-align: center;
     color: white;
     line-height:40px;
@@ -164,7 +165,7 @@ a:hover {
 
 
 /* Responsive Styles */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 
     .card-container > *:not(.circle-link) ,
     .terminal {
@@ -184,4 +185,4 @@ a:hover {
         right: 120px;
         transform: rotate(-5deg);
     }
-}
+} */
