@@ -16,6 +16,7 @@
     height:40px;
     background:black;
     width: 20vw;
+    max-width: 275px;
     text-align: center;
     color: white;
     line-height:40px;

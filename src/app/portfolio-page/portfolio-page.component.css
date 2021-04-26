@@ -8,18 +8,21 @@
     float: left;
     padding: 20px;
     padding-top: 0px;
+    min-width: 175px;
 }
 
 .button {
-    float:left;
-    height:30px;
-    background:black;
-    width:150px;
+    float: left;
+    height: 30px;
+    background: black;
+    width: 12vw;
     text-align: center;
     color: white;
-    line-height:30px;
-    border-top-left-radius:8px;
-    border-bottom-left-radius:8px;
+    max-width: 200px;
+    min-width: 100px;
+    line-height: 30px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .arrow-right {
@@ -58,10 +61,28 @@
     float:left;
 }
 
-.button-tile {
-    float: right;
+.button-tile-duel-calc {
+    height: 19vw;
     max-height: 250px;
     max-width: 350px;
+}
+
+.button-tile-candy-gal {
+    height: 13.2vw;
+    width: 22vw;
+    max-height: 211px;
+    max-width: 350px;
+}
+
+.button-tile-joke-gen {
+    height: 15.2vw;
+    width: 22vw;
+    max-height: 190px;
+    max-width: 270px;
+}
+
+.button-tile {
+    float: right;
     box-shadow: black 6px 6px 6px;
 }​
 
@@ -85,6 +106,12 @@ img {
 
 .card-container:hover .arrow-left {
     border-right:20px solid rgb(210, 60, 15) !important;
+}
+
+.card-container:hover .button-tile {
+    box-shadow: rgb(210, 60, 15) 6px 6px 6px;
+    background-color: rgb(210, 60, 15);
+    border-color: rgb(210, 60, 15);
 }
 
 :host {
