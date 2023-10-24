@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"resume-page\" class=\"resume\"\n  style=\"transform: translateY(-100%)\"\n  [@slideDown]=\"openClose ? 'open' : 'close'\">\n        <div class=\"float-container\">\n          <div class=\"float-child\">\n            <a href='assets/Jayce Meyer Resume (Apr 2021).jpg' target=\"assets/Jayce Meyer Resume (Apr 2021).jpg\">\n              <img style=\"height: 1100px; width: 800px; object-fit: cover;\" src=\"assets/Jayce Meyer Resume (Apr 2021).jpg\" alt=\"pic.jpg\">\n            </a>\n          </div>\n        </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"resume-page\" class=\"resume\"\n  style=\"transform: translateY(-100%)\"\n  [@slideDown]=\"openClose ? 'open' : 'close'\">\n        <div class=\"float-container\">\n          <div class=\"float-child\">\n            <a href='assets/Jayce Meyer Resume (Oct 2023).jpg' target=\"assets/Jayce Meyer Resume (Oct 2023).jpg\">\n              <img style=\"height: 1100px; width: 800px; object-fit: cover;\" src=\"assets/Jayce Meyer Resume (Oct 2023).jpg\" alt=\"pic.jpg\">\n            </a>\n          </div>\n        </div>\n</div>");
 
 /***/ }),
 
