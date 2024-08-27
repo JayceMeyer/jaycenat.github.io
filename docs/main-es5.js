@@ -115,7 +115,7 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-    __webpack_exports__["default"] = "<div id=\"resume-page\" class=\"resume\"\r\n  style=\"transform: translateY(-100%)\"\r\n  [@slideDown]=\"openClose ? 'open' : 'close'\">\r\n        <div class=\"float-container\">\r\n          <div class=\"float-child\">\r\n            <a href=\"assets/images/Jayce Meyer Resume (Oct 2023).jpg\" target=\"../../assets/images/Jayce Meyer Resume (Oct 2023).jpg\">\r\n              <img style=\"height: 1100px; width: 800px; object-fit: cover;\" src=\"../../assets/images/Jayce Meyer Resume (Oct 2023).jpg\" alt=\"resume.jpg\">\r\n            </a>\r\n          </div>\r\n        </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div id=\"resume-page\" class=\"resume\"\r\n  style=\"transform: translateY(-100%)\"\r\n  [@slideDown]=\"openClose ? 'open' : 'close'\">\r\n        <div class=\"float-container\">\r\n          <div class=\"float-child\">\r\n            <a href=\"assets/images/Jayce Meyer Resume (Aug 2024).jpg\" target=\"../../assets/images/Jayce Meyer Resume (Aug 2024).jpg\">\r\n              <img style=\"height: 1100px; width: 800px; object-fit: cover;\" src=\"../../assets/images/Jayce Meyer Resume (Aug 2024).jpg\" alt=\"resume.jpg\">\r\n            </a>\r\n          </div>\r\n        </div>\r\n</div>";
 
     /***/
   }),
