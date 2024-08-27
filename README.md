@@ -1,2 +1,2 @@
-# angular-personal-website
-https://jaycenat.github.io/angular-personal-website/
+# Jayce Meyer - About Me
+https://jaycenat.github.io/
